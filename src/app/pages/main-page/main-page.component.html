@@ -1,4 +1,4 @@
 <div class="main">
-    <navbar/>
-    <main-header/>
+    <navbar (sendLang)="changeLang($event)"/>
+    <main-header [lang]="lang!"/>
 </div>

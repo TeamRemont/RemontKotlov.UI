@@ -1,23 +1,27 @@
 .main {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(../../../assets/plumber.png);
     background-size: cover;
 }
 
 .bg-image {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
 }
 
 .inner-main {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(to bottom, rgba(67, 67, 67, 0.7) 35%, rgba(0, 0, 0, 0.9) 75%);
+}
+
+.space-50{
+    height: 50px;
 }
 
 .content-handler {
@@ -27,8 +31,9 @@
 }
 
 .header-context{
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 700;
+    line-height: 1;
 }
 
 .description-context{

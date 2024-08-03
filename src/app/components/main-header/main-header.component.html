@@ -1,21 +1,47 @@
 <div class="main">
+    <div class="space-50"></div>
     <div class="inner-main">
         <div class="content-handler">
             <h1 class="header-context">
+                @if (lang=="Uzbek") {
                 Isitish qozonlarini yuqori sifatli kafolat bilan o'rnatish va ta'mirlash
+                }
+                @else if (lang=="Russian") {
+                Ремонт котлов в Ташкенте и Техническое обслуживание котлов отопления качественно с гарантией в Ташкенте
+                }
             </h1>
             <p class="description-context">
+                @if (lang=="Uzbek") {
                 Isitish qozonlarining buzilishi ertami-kechmi har xil turdagi va ishlab chiqarish birliklari bilan sodir
                 bo'ladi. Uskunaning iloji boricha uzoqroq xizmat qilishi uchun siz uni ehtiyotkorlik bilan
                 ishlatishingiz va to'g'ri o'rnatishingiz kerak. Remont kotlov Tashkent
+                }
+                @else if (lang=="Russian") {
+                Поломки отопительных котлов рано или поздно случаются с агрегатами разного типа и производства. Чтобы
+                техника прослужила как можно дольше, нужно ее бережно эксплуатировать и правильно установить.
+                }
             </p>
             <div class="contact-handler">
                 <a href="#phone-number" class="phone-number">📞 (93) 538 22 10</a>
                 <a href="#phone-number" class="phone-number">📞 (93) 538 22 10</a>
             </div>
             <div class="contact-handler contact-btns">
-                <button class="contact-btn btn btn-success">Call</button>
-                <button class="contact-btn btn btn-primary">Telegram</button>
+                <button class="contact-btn btn btn-success">
+                    @if (lang=="Uzbek") {
+                    Telefon qilish
+                    }
+                    @else if (lang=="Russian") {
+                    Позвонить
+                    }
+                </button>
+                <button class="contact-btn btn btn-primary">
+                    @if (lang=="Uzbek") {
+                    Telegram
+                    }
+                    @else if (lang=="Russian") {
+                    Телеграм
+                    }
+                </button>
             </div>
         </div>
     </div>

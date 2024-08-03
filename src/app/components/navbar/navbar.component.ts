@@ -8,11 +8,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
 export class NavbarComponent {
   @Output() sendLang = new EventEmitter()
 
-  constructor() {
-    this.sendLang.emit(this.lang)
-    localStorage.setItem("lang",this.lang!)
-  }
-
   lang = localStorage.getItem("lang") != null ? localStorage.getItem("lang") : "Uzbek"
   secondaryLang=this.lang=="Uzbek"?"Russian":"Uzbek"
 
