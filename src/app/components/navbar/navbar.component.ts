@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'navbar',
@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  @Output() sendLang = new EventEmitter()
 
+  constructor() {
+    this.sendLang.emit(this.lang)
+    localStorage.setItem("lang",this.lang!)
+  }
+
+  lang = localStorage.getItem("lang") != null ? localStorage.getItem("lang") : "Uzbek"
+  secondaryLang=this.lang=="Uzbek"?"Russian":"Uzbek"
+
+  changeLang(lang: string) {
+    this.sendLang.emit(lang)
+    this.secondaryLang=this.lang!
+    this.lang = lang
+    localStorage.setItem("lang",this.lang)
+  }
 }
