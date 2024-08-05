@@ -1,0 +1,169 @@
+<div class="main">
+    <div class="inner-main">
+        <hr style="background-color: white; height: 3px;">
+        <div class="header-handler">
+            <h1>
+                @if (lang=="Uzbek") {
+                Bizning jamoa
+                }
+                @else if (lang=="Russian") {
+                Наша команда
+                }
+            </h1>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carusel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card-handler">
+                        <div class="card" style="width: 18rem;" data-bs-theme="dark">
+                            <img src="../../../assets/worker-1.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @if (lang=="Uzbek") {
+                                    Ergash Karimov
+                                    }
+                                    @else if (lang=="Russian") {
+                                    Эргаш Каримов
+                                    }
+                                </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of
+                                    the card's content.</p>
+                                <div class="card-btn-handler">
+                                    <button class="btn btn-outline-success worker-contact-btn">Call</button>
+                                    <button class="btn btn-outline-primary worker-contact-btn">Telegram</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                @if (lang=="Uzbek") {
+                                10 yil staj
+                                }
+                                @else if (lang=="Russian") {
+                                10 лет опыта
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-handler">
+                        <div class="card" style="width: 18rem;" data-bs-theme="dark">
+                            <img src="../../../assets/worker-2.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @if (lang=="Uzbek") {
+                                    Baxodir Jalolov
+                                    }
+                                    @else if (lang=="Russian") {
+                                    Баходир Джалолов
+                                    }
+                                </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <div class="card-btn-handler">
+                                    <button class="btn btn-outline-success worker-contact-btn">Call</button>
+                                    <button class="btn btn-outline-primary worker-contact-btn">Telegram</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                @if (lang=="Uzbek") {
+                                8 yil staj
+                                }
+                                @else if (lang=="Russian") {
+                                8 лет опыта
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-handler">
+                        <div class="card" style="width: 18rem;" data-bs-theme="dark">
+                            <img src="../../../assets/worker-3.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @if (lang=="Uzbek") {
+                                    Doniyor Kayumov
+                                    }
+                                    @else if (lang=="Russian") {
+                                    Даниёр Каюмов
+                                    }
+                                </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <div class="card-btn-handler">
+                                    <button class="btn btn-outline-success worker-contact-btn">Call</button>
+                                    <button class="btn btn-outline-primary worker-contact-btn">Telegram</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                @if (lang=="Uzbek") {
+                                3 yil staj
+                                }
+                                @else if (lang=="Russian") {
+                                3 лет опыта
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card-handler">
+                        <div class="card" style="width: 18rem;" data-bs-theme="dark">
+                            <img src="../../../assets/worker-4.jpeg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @if (lang=="Uzbek") {
+                                    Palonchi Palonchiev
+                                    }
+                                    @else if (lang=="Russian") {
+                                    Палончи Палончиев
+                                    }
+                                </h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                                <div class="card-btn-handler">
+                                    <button class="btn btn-outline-success worker-contact-btn">Call</button>
+                                    <button class="btn btn-outline-primary worker-contact-btn">Telegram</button>
+                                </div>
+                            </div>
+                            <div class="card-footer text-body-secondary">
+                                @if (lang=="Uzbek") {
+                                1 yil staj
+                                }
+                                @else if (lang=="Russian") {
+                                1 лет опыта
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
