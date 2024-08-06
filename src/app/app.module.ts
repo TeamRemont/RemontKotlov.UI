@@ -18,6 +18,7 @@ import { TagModule } from 'primeng/tag';
 import { SnapshotsComponent } from './components/snapshots/snapshots.component';
 import { ContactsComponent } from './components/contacts/contacts.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactButtonsComponent } from './components/contact-buttons/contact-buttons.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { FooterComponent } from './components/footer/footer.component';
     SnapshotsComponent,
     BrandsComponent,
     ContactsComponent,
-    FooterComponent
+    FooterComponent,
+    ContactButtonsComponent
   ],
   imports: [
     BrowserModule,
