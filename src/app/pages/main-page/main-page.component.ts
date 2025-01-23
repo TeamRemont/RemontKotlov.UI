@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './main-page.component.scss'
 })
 export class MainPageComponent {
+  lang!:string
   constructor(){
     if(typeof localstorage!=="undefined"){
       lang=localStorage.getItem("lang") != null ? localStorage.getItem("lang") : "Uzbek"
